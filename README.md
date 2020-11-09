@@ -21,4 +21,4 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* [...](https://zayne.io/articles/how-to-build-a-crud-app-with-ruby-on-rails-and-react)
