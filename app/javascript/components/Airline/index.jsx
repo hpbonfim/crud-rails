@@ -1,21 +1,22 @@
 import React from 'react'
 import { BrowserRouter as Router, Link } from 'react-router-dom'
+import { Card, AirlineLogo, AirlineName, LinkWrapper } from './styles'
 
 const Airline = (props) => {
   const { name, image_url, slug } = props.attributes
 
   return (
-    <div className="card">
-      <div className="airline-logo">
+    <Card>
+      <AirlineLogo>
         <img src={image_url} alt={name} width="50" />
-      </div>
-      <div className="airline-name">
+      </AirlineLogo>
+      <AirlineName>
         {name}
-      </div>
-      <div className="link-wrapper">
+      </AirlineName>
+      <LinkWrapper>
         <Link to={"/" + slug}>View Airline</Link>
-      </div>
-    </div>
+      </LinkWrapper>
+    </Card>
   )
 }
 

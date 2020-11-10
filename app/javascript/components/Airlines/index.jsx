@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Airline from '../Airline'
-
+import { Home, Header, Subheader, Grid } from './styles'
 
 const Airlines = () => {
   const [airlines, setAirlines] = useState([])
@@ -29,16 +29,16 @@ const Airlines = () => {
 
 
   return (
-    <section className="home">
-      <section className="header">
+    <Home>
+      <Header>
         <h1>OpenFlights</h1>
-        <p className="subheader">Honest, unbiased airline reviews. Share your experience.</p>
-      </section>
+        <Subheader>Honest, unbiased airline reviews. Share your experience.</Subheader>
+      </Header>
 
-      <section className="grid">
+      <Grid>
         {grid}
-      </section>
-    </section>
+      </Grid>
+    </Home>
   )
 }
 
